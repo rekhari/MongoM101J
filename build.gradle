@@ -1,0 +1,21 @@
+group 'prekhari'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.4.0-rc1'
+
+}
+
+mainClassName = "prekhari.m101j.week2_3.Week2_3"
+applicationDefaultJvmArgs  = ["-DTest=Test"]
+
+
